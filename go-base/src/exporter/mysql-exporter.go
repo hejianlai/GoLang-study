@@ -63,7 +63,7 @@ func NewApiExport(apiName string) *ApiExport {
 		ApiName: apiName,
 		ApiSourceDesc: prometheus.NewDesc(
 			"userinfo_count",                           // 指标的名称
-			"help~~~~",                             // 帮助信息
+		    "help~~~~",                             // 帮助信息
 			[]string{"host"},                       // label名称数组
 			prometheus.Labels{"api_name": apiName}, // labels
 		),
